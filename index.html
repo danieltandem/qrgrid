@@ -11,14 +11,56 @@
     <div class="container">
         <div>
             <header>
-            <h2>GENERADOR DE QRS</h2><br>
-            <p>De Patrimonio Nacional</p>
+            <h2> <strong>GENERADOR DE QRS</strong></h2><br>
+            <p><strong>De Patrimonio Nacional</strong></p>
         </header>
     </div>
+        <div class="tab-component">
+            <!-- LISTA DE PESTAÑAS -->
+            <ul class="tab-list">
+                <li><a href="#" class="tab-link">URL</a></li>
+                <li><a href="#" class="tab-link">TEXTO</a></li>
+                <li><a href="#" class="tab-link">IMAGEN</a></li>
+                <li><a href="#" class="tab-link">DESCARGA</a></li>
+                <li><a href="#" class="tab-link">WIFI</a></li>
+
+            </ul>
+            <!-- CONTENIDO DE PESTAÑAS -->
+            <div class="tab-content">
+                <div class="tab-pane">
+                    <form action="get" name="urldesc">
+                    <input type="url" id="url" name="url" placeholder="Inserte URL">
+                    <button type="submit" class="botonenviar">Enviar</button>
+                </form>
+                </div>
+                <div class="tab-pane">
+                    <form action="get" name="textodesc">
+                    <input type="textarea" id="texto" name="texto" placeholder="Inserte texto">
+                    <button type="submit" class="botonenviar">Enviar</button>
+                </form>
+                </div>
+                <div class="tab-pane">
+                    <form name="subida-imagenes" type="POST">
+                        <input type="submit" name="subir-imagen" value="Enviar imagen" />
+                    </form>
+                </div>
+                    <div class="tab-pane">
+                        <form name="descarga qr">
+                        <a class="botonimgdesc" href="descargas/qr-code.png" download="qr-code">Descargar Archivo</a>
+                        </form>
+                </div>
+            <div class="tab-pane">
+                <form name="descarga wifi">
+                <a class="botonimgdesc" href="descargas/WIFI.png" download="WIFI">Descargar Archivo</a>
+                </form>
+        </div>
+        </div>
+    </div>
+
     <div class="contenido-grid">
         <div class="usuario">
             <h3>USUARIO</h3>
-            <img class="fotousuario" src="Logo.png" alt="">
+            <img class="fotousuario" src="/descargas/usuario.png" alt="">
             <p class="nombreusuario"> <strong>Nombre de Usuario</strong></p>
             <div class="botonesusuario">
                 <button type="button" class="botonusuario">EDITAR FOTO DE PERFIL</button>
@@ -50,5 +92,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

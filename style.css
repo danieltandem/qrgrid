@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+
     background-color: lightgoldenrodyellow;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -11,8 +12,8 @@ body{
 header{
     padding: 10px;
     text-align: center;
-    background: #f3e873;
-    color: rgb(255, 255, 255);
+    background: #fcf399;
+    color: goldenrod;
     font-size: 30px;
     height: 150px;
 }
@@ -31,6 +32,7 @@ h2{
     width: 290px;
     border: 2px solid black;
     height: 490px;
+    margin-top: 20px;
 }
 h3{
     background-color: rgb(175, 169, 169);
@@ -68,8 +70,8 @@ h3{
 }
 .botonusuario{
     margin: 1em;
-    background-color: #f3e873;
-    color: white;
+    background-color: #fcf399;
+    color: black;
     padding: 10px;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     border: 3px black solid;
@@ -102,13 +104,80 @@ h3{
     height: 50px;
     margin-top: 25px;
     border: black 5px solid;
-    color: white;
+    color: black;
     font-weight: bold;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 a{
     text-decoration: none ;
 }
+.tab-content .tab-pane{
+    display: none;
+
+}
+.tab-content .tab-pane:first-child{
+    display: block;
+}
+.tab-list{
+    display: flex;
+    grid-gap: 110px;
+    padding-left: 260px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 220px;
+}
+.tab-link{
+    border: goldenrod 4px ridge;
+    border-radius: 30%;
+    padding: 13px;
+    background-color:khaki;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    color:rgb(134, 134, 176);
+}
+.tab-link:hover{
+    background-color: darkkhaki;
+    cursor: pointer;
+    color: whitesmoke;
+}
+.tab-content{
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(191, 191, 238);
+    height: 60px;
+    border: 3px black double;
+}
+.tab-component{
+    border: 2px solid black;
+}
+ul{
+    list-style: none;
+}
+.botonqr:hover{
+    background-color: white;
+}
+.tab-list,a{
+    border: solid 2px black;
+}
+.botonimgdesc{
+    padding: 4px;
+    color: white;
+    background-color: rgb(163, 159, 159) ;
+    border: solid 2px black;
+}
+.botonenviar{
+    background-color: white;
+    color: black;
+    padding: 4px;
+}
+.botonenviar:hover{
+    background-color: black;
+    color: white;
+}
+.tab-list a:focus{
+    background-color: whitesmoke;
+}
+
 @media(max-width:500px){
     .fila{
         grid-template-rows: 1fr 1fr;
